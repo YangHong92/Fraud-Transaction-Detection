@@ -9,9 +9,7 @@ Candidate models are weighted Logistic Regression, Random Forest, LightGBM. It i
 
 To further improve the model’s performance, model stacking and model cascading are implemented. The result shows that:
 - By further stacking models, the meta-learner can achieve the highest Recall (0.772), with above average F1 score (0.082);
-- By cascading models, the final output shows that the Precision is significantly improved by 5 times (0.218), and achieve the highest F1 score (0.207).
-
-Generally speaking, this approach resolves the low precision issue observed in all previous models.
+- By cascading models, the final output shows that the Precision is significantly improved by 5 times (0.218), and achieve the highest F1 score (0.207). Generally speaking, this approach resolves the low precision issue observed in all previous models.
 
 ## Project Highlight
 -	Given data distribution, proposed hypothesis while doing EDA
@@ -29,13 +27,13 @@ Generally speaking, this approach resolves the low precision issue observed in a
 ## Steps:
 1.	Train test split (Stratified sampling)
 2.	Data preprocess:
-o	Numeric feature: standardisation
-o	Categorical feature: target encoding, one hot encoding, binary encoding
+	- Numeric feature: standardisation
+	- Categorical feature: target encoding, one hot encoding, binary encoding
 3.	KNN imputer + Feature engineering
 4.	Grid search + Class weight or Grid search + Down-sampling
 5.	Performance improvement:
-o	Model Stacking
-o	Model Cascading
+	- Model Stacking
+	- Model Cascading
 
 ## Future Work:
 -	Explore Datetime and derive new features
