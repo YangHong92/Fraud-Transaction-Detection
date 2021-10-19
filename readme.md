@@ -1,7 +1,7 @@
 # Fraud Transaction Detection
 
 ## Project Overview
-Predict on highly imbalanced test set (positive: negative: 0.016).
+Predict on highly imbalanced test set (positive/negative ratio: 0.016).
 
 Metrics are Recall, Precision and F1 score. After evaluating model performance using those metrics, it shows that the feature engineering helps in improving models' performance in all metrics (Recall, Precision, F1 score). 
 
