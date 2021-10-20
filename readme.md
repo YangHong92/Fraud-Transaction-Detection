@@ -32,7 +32,7 @@ To further improve the model’s performance, model stacking and model cascading
 - Applied Model Stacking
 - Applied Model Cascading
 
-## Steps:
+## Steps
 1.	Train test split (Stratified sampling)
 2.	Data preprocess:
 	- Numeric feature: standardisation
@@ -43,6 +43,6 @@ To further improve the model’s performance, model stacking and model cascading
 	- Model Stacking
 	- Model Cascading
 
-## Future Work:
+## Future Work
 -	Explore Datetime and derive new features
 -	Up-sampling using SMOTE
