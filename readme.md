@@ -19,9 +19,8 @@ To further improve the model’s performance, model stacking and model cascading
 ![cascade model architecture](https://github.com/YangHong92/Fraud-Transaction-Detection/raw/master/cascade_model_architecture.png)
 
 ## Project Highlight
--	Given data distribution, proposed hypothesis while doing EDA
 -	Discovered some interesting findings and based on which manually derive several features:
-    -  Compare ‘cardCVV’ and ‘enteredCVV’ -> ‘isCVV_correct’
+    - Compare ‘cardCVV’ and ‘enteredCVV’ -> ‘isCVV_correct’
     - Compare ‘merchantCountryCode’ and ‘acqCountry’ -> ‘isDomensticTransaction’ 
     - Compare day difference between transactionDateTime and accountOpenDate -> days_after_signup
     - Group by customerID and cardLast4Digits -> numOfCards per customer 
@@ -29,7 +28,9 @@ To further improve the model’s performance, model stacking and model cascading
     - Log-transform skewed features
     - Use K-means to assign cluster for each transaction
     - Include PCA first 3 components as it shows hyperplane separable for fraud and non-fraud transactions
-    - Visualize ROC curve, PR curve and feature importance 
+- Visualize the ROC curve, PR curve and feature importance for trained models
+- Applied Model Stacking
+- Applied Model Cascading
 
 ## Steps:
 1.	Train test split (Stratified sampling)
