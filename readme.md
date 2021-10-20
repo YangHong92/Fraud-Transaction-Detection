@@ -9,7 +9,14 @@ Candidate models are weighted Logistic Regression, Random Forest, LightGBM. It i
 
 To further improve the model’s performance, model stacking and model cascading are implemented. The result shows that:
 - By further stacking models, the meta-learner can achieve the highest Recall (0.772), with above average F1 score (0.082);
+
+    The architecture of model stacking:
+![stack model architecture](https://github.com/YangHong92/Fraud-Transaction-Detection/raw/master/stacking_model_architecture.png)
+
 - By cascading models, the final output shows that the Precision is significantly improved by 5 times (0.218), and achieve the highest F1 score (0.207). Generally speaking, this approach resolves the low precision issue observed in all previous models.
+
+    The architecture of model cascading:
+![cascade model architecture](https://github.com/YangHong92/Fraud-Transaction-Detection/raw/master/cascade_model_architecture.png)
 
 ## Project Highlight
 -	Given data distribution, proposed hypothesis while doing EDA
